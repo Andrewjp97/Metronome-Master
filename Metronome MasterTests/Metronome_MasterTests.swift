@@ -21,7 +21,7 @@ class Metronome_MasterTests: XCTestCase {
         super.tearDown()
     }
     
-    func testBeatCreation {
+    func testBeatCreation() {
         
         let beat = Beat()
         beat.subdivisions = 8
