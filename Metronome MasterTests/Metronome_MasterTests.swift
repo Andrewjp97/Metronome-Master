@@ -21,7 +21,17 @@ class Metronome_MasterTests: XCTestCase {
         super.tearDown()
     }
     
+    func testBeatCreation {
+        
+        let beat = Beat()
+        beat.subdivisions = 8
+        beat.time = 2
+        beat.accented = true
+        beat.generateSounds()
+        
+        XCTAssertEqual(beat.sounds.count, 8, "Pass")
     
+    }
     
     
 //    func testExample() {
