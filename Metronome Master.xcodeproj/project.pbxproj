@@ -28,6 +28,8 @@
 		AEEB17771AFFFB96002BD069 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17721AFFFB96002BD069 /* Moment.swift */; };
 		AEEB17781AFFFB96002BD069 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17731AFFFB96002BD069 /* Operators.swift */; };
 		AEEB17791AFFFB96002BD069 /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17741AFFFB96002BD069 /* TimeUnit.swift */; };
+		AEEB177D1B0001BC002BD069 /* AccentedSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEEB177B1B0001BC002BD069 /* AccentedSound.mp3 */; };
+		AEEB177E1B0001BC002BD069 /* RegularSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEEB177C1B0001BC002BD069 /* RegularSound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		AEEB17721AFFFB96002BD069 /* Moment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
 		AEEB17731AFFFB96002BD069 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		AEEB17741AFFFB96002BD069 /* TimeUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUnit.swift; sourceTree = "<group>"; };
+		AEEB177B1B0001BC002BD069 /* AccentedSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AccentedSound.mp3; sourceTree = "<group>"; };
+		AEEB177C1B0001BC002BD069 /* RegularSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RegularSound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 				AE5D17CA1AFFD62B00E55203 /* MainViewController.swift */,
 				AEEB17641AFFEDA7002BD069 /* Measure.swift */,
 				AEEB17661AFFEDDA002BD069 /* Beat.swift */,
+				AEEB177B1B0001BC002BD069 /* AccentedSound.mp3 */,
+				AEEB177C1B0001BC002BD069 /* RegularSound.mp3 */,
 				AEEB177A1AFFFB9D002BD069 /* Swift Moment */,
 				AEEB17681AFFEDE9002BD069 /* Phrase.swift */,
 				AEEB176A1AFFEDF2002BD069 /* Song.swift */,
@@ -256,8 +262,10 @@
 			files = (
 				AE5A5B061AFFE5EE006D0F83 /* Icon-60@3x.png in Resources */,
 				AE5D17CE1AFFD62B00E55203 /* Main.storyboard in Resources */,
+				AEEB177D1B0001BC002BD069 /* AccentedSound.mp3 in Resources */,
 				AE5D17D31AFFD62B00E55203 /* LaunchScreen.xib in Resources */,
 				AE5D17D01AFFD62B00E55203 /* Images.xcassets in Resources */,
+				AEEB177E1B0001BC002BD069 /* RegularSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

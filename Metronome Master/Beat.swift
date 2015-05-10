@@ -70,12 +70,15 @@ class Beat: NSObject {
         
         var i = 0
         
-        for (i = 0; i <= subdivisions; i++) {
+        for (i = 0; i < subdivisions; i++) {
             
-            if accented {
-                
-                i <= 0 ? sounds.insert(accentedSound, atIndex: i) : sounds.insert(regularSound, atIndex: i)
-                
+            if i == 0 {
+                if accented {
+                    sounds = [accentedSound]
+                }
+                else {
+                    sounds = [regularSound]
+                }
             }
             else {
                 sounds.insert(regularSound, atIndex: i)
