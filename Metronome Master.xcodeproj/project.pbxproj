@@ -10,7 +10,7 @@
 		AE5A5B061AFFE5EE006D0F83 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5A5B051AFFE5EE006D0F83 /* Icon-60@3x.png */; };
 		AE5D17C61AFFD62B00E55203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D17C51AFFD62B00E55203 /* AppDelegate.swift */; };
 		AE5D17C91AFFD62B00E55203 /* Metronome_Master.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE5D17C71AFFD62B00E55203 /* Metronome_Master.xcdatamodeld */; };
-		AE5D17CB1AFFD62B00E55203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D17CA1AFFD62B00E55203 /* ViewController.swift */; };
+		AE5D17CB1AFFD62B00E55203 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D17CA1AFFD62B00E55203 /* MainViewController.swift */; };
 		AE5D17CE1AFFD62B00E55203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5D17CC1AFFD62B00E55203 /* Main.storyboard */; };
 		AE5D17D01AFFD62B00E55203 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5D17CF1AFFD62B00E55203 /* Images.xcassets */; };
 		AE5D17D31AFFD62B00E55203 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5D17D11AFFD62B00E55203 /* LaunchScreen.xib */; };
@@ -34,7 +34,7 @@
 		AE5D17C41AFFD62B00E55203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5D17C51AFFD62B00E55203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE5D17C81AFFD62B00E55203 /* Metronome_Master.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Metronome_Master.xcdatamodel; sourceTree = "<group>"; };
-		AE5D17CA1AFFD62B00E55203 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE5D17CA1AFFD62B00E55203 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AE5D17CD1AFFD62B00E55203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE5D17CF1AFFD62B00E55203 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AE5D17D21AFFD62B00E55203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -61,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE5A5B071AFFE650006D0F83 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AE5D17CC1AFFD62B00E55203 /* Main.storyboard */,
+				AE5D17D11AFFD62B00E55203 /* LaunchScreen.xib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
 		AE5D17B71AFFD62B00E55203 = {
 			isa = PBXGroup;
 			children = (
@@ -85,10 +94,9 @@
 			children = (
 				AE51BDB61AFFDD4100E817F4 /* Metronome Master.entitlements */,
 				AE5D17C51AFFD62B00E55203 /* AppDelegate.swift */,
-				AE5D17CA1AFFD62B00E55203 /* ViewController.swift */,
-				AE5D17CC1AFFD62B00E55203 /* Main.storyboard */,
+				AE5D17CA1AFFD62B00E55203 /* MainViewController.swift */,
+				AE5A5B071AFFE650006D0F83 /* Interface */,
 				AE5D17CF1AFFD62B00E55203 /* Images.xcassets */,
-				AE5D17D11AFFD62B00E55203 /* LaunchScreen.xib */,
 				AE5D17C71AFFD62B00E55203 /* Metronome_Master.xcdatamodeld */,
 				AE5D17C31AFFD62B00E55203 /* Supporting Files */,
 			);
@@ -244,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5D17CB1AFFD62B00E55203 /* ViewController.swift in Sources */,
+				AE5D17CB1AFFD62B00E55203 /* MainViewController.swift in Sources */,
 				AE5D17C91AFFD62B00E55203 /* Metronome_Master.xcdatamodeld in Sources */,
 				AE5D17C61AFFD62B00E55203 /* AppDelegate.swift in Sources */,
 			);
