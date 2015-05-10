@@ -9,6 +9,14 @@
 import UIKit
 import AVFoundation
 
+extension Int {
+    
+    var double: Double {
+        return Double(self)
+    }
+    
+}
+
 let accentedPath: String = NSBundle.mainBundle().pathForResource("AccentedSound", ofType: "mp3")!
 
 let accentedURL: NSURL = NSURL(fileURLWithPath: accentedPath)!
@@ -52,7 +60,7 @@ class Beat: NSObject {
                 
                 currentDivision++
                 
-                NSTimer.scheduledTimerWithTimeInterval(time / Double(subdivisions), target: self, selector: Selector("playNextSound"), userInfo: nil, repeats: false)
+                NSTimer.scheduledTimerWithTimeInterval(time / subdivisions.double, target: self, selector: Selector("playNextSound"), userInfo: nil, repeats: false)
                 
             }
             
@@ -62,7 +70,7 @@ class Beat: NSObject {
     
     func playSounds() {
         
-        NSTimer.scheduledTimerWithTimeInterval(time / Double(subdivisions), target: self, selector: Selector("playNextSound"), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(time / subdivisions.double, target: self, selector: Selector("playNextSound"), userInfo: nil, repeats: false)
         
     }
     
