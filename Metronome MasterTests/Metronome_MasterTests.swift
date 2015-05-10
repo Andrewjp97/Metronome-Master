@@ -33,6 +33,16 @@ class Metronome_MasterTests: XCTestCase {
     
     }
     
+    func testBeatPerformance() {
+        self.measureBlock { () -> Void in
+            let beat = Beat()
+            beat.subdivisions = 8
+            beat.time = 2
+            beat.accented = true
+            beat.generateSounds()
+        }
+    }
+    
     
 //    func testExample() {
 //        // This is an example of a functional test case.
