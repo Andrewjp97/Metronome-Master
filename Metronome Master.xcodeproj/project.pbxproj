@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE51BDB81AFFDD9800E817F4 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE51BDB71AFFDD9800E817F4 /* Crashlytics.framework */; };
 		AE5D17C61AFFD62B00E55203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D17C51AFFD62B00E55203 /* AppDelegate.swift */; };
 		AE5D17C91AFFD62B00E55203 /* Metronome_Master.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE5D17C71AFFD62B00E55203 /* Metronome_Master.xcdatamodeld */; };
 		AE5D17CB1AFFD62B00E55203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D17CA1AFFD62B00E55203 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		AE51BDB61AFFDD4100E817F4 /* Metronome Master.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Metronome Master.entitlements"; sourceTree = "<group>"; };
+		AE51BDB71AFFDD9800E817F4 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		AE5D17C01AFFD62B00E55203 /* Metronome Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metronome Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5D17C41AFFD62B00E55203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5D17C51AFFD62B00E55203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE51BDB81AFFDD9800E817F4 /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +98,7 @@
 		AE5D17C31AFFD62B00E55203 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AE51BDB71AFFDD9800E817F4 /* Crashlytics.framework */,
 				AE5D17C41AFFD62B00E55203 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -231,7 +235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "git=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list --all |wc -l`\nif [ $CONFIGURATION = \"Debug\" ]; then\nbranchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nelse\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nfi\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
+			shellScript = "git=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list --all |wc -l`\nif [ $CONFIGURATION = \"Debug\" ]; then\nbranchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nelse\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nfi\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n\n./Crashlytics.framework/run 1c6d125161cfd6155af441bc83d21a64632d815c 0bd63c3e7bccadb5a03117ce104a04e0040a7858af6c8bc5824aed3b65726fbd";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -373,6 +377,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Metronome Master/Metronome Master.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Metronome",
+					Master,
+				);
 				INFOPLIST_FILE = "Metronome Master/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -385,6 +394,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Metronome Master/Metronome Master.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Metronome",
+					Master,
+				);
 				INFOPLIST_FILE = "Metronome Master/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
