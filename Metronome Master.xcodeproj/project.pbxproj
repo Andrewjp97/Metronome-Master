@@ -19,6 +19,15 @@
 		AEEB17671AFFEDDA002BD069 /* Beat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17661AFFEDDA002BD069 /* Beat.swift */; };
 		AEEB17691AFFEDE9002BD069 /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17681AFFEDE9002BD069 /* Phrase.swift */; };
 		AEEB176B1AFFEDF2002BD069 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB176A1AFFEDF2002BD069 /* Song.swift */; };
+		AEEB176C1AFFEE22002BD069 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17641AFFEDA7002BD069 /* Measure.swift */; };
+		AEEB176D1AFFEE22002BD069 /* Beat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17661AFFEDDA002BD069 /* Beat.swift */; };
+		AEEB176E1AFFEE22002BD069 /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17681AFFEDE9002BD069 /* Phrase.swift */; };
+		AEEB176F1AFFEE22002BD069 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB176A1AFFEDF2002BD069 /* Song.swift */; };
+		AEEB17751AFFFB96002BD069 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17701AFFFB96002BD069 /* Duration.swift */; };
+		AEEB17761AFFFB96002BD069 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17711AFFFB96002BD069 /* Extensions.swift */; };
+		AEEB17771AFFFB96002BD069 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17721AFFFB96002BD069 /* Moment.swift */; };
+		AEEB17781AFFFB96002BD069 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17731AFFFB96002BD069 /* Operators.swift */; };
+		AEEB17791AFFFB96002BD069 /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17741AFFFB96002BD069 /* TimeUnit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,11 @@
 		AEEB17661AFFEDDA002BD069 /* Beat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beat.swift; sourceTree = "<group>"; };
 		AEEB17681AFFEDE9002BD069 /* Phrase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phrase.swift; sourceTree = "<group>"; };
 		AEEB176A1AFFEDF2002BD069 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		AEEB17701AFFFB96002BD069 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		AEEB17711AFFFB96002BD069 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AEEB17721AFFFB96002BD069 /* Moment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
+		AEEB17731AFFFB96002BD069 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		AEEB17741AFFFB96002BD069 /* TimeUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUnit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +119,7 @@
 				AE5D17CA1AFFD62B00E55203 /* MainViewController.swift */,
 				AEEB17641AFFEDA7002BD069 /* Measure.swift */,
 				AEEB17661AFFEDDA002BD069 /* Beat.swift */,
+				AEEB177A1AFFFB9D002BD069 /* Swift Moment */,
 				AEEB17681AFFEDE9002BD069 /* Phrase.swift */,
 				AEEB176A1AFFEDF2002BD069 /* Song.swift */,
 				AE5A5B071AFFE650006D0F83 /* Interface */,
@@ -138,6 +153,18 @@
 				AE5D17DD1AFFD62C00E55203 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEEB177A1AFFFB9D002BD069 /* Swift Moment */ = {
+			isa = PBXGroup;
+			children = (
+				AEEB17701AFFFB96002BD069 /* Duration.swift */,
+				AEEB17711AFFFB96002BD069 /* Extensions.swift */,
+				AEEB17721AFFFB96002BD069 /* Moment.swift */,
+				AEEB17731AFFFB96002BD069 /* Operators.swift */,
+				AEEB17741AFFFB96002BD069 /* TimeUnit.swift */,
+			);
+			name = "Swift Moment";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,13 +291,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEEB17791AFFFB96002BD069 /* TimeUnit.swift in Sources */,
 				AEEB176B1AFFEDF2002BD069 /* Song.swift in Sources */,
+				AEEB17761AFFFB96002BD069 /* Extensions.swift in Sources */,
 				AEEB17691AFFEDE9002BD069 /* Phrase.swift in Sources */,
+				AEEB17771AFFFB96002BD069 /* Moment.swift in Sources */,
 				AE5D17CB1AFFD62B00E55203 /* MainViewController.swift in Sources */,
 				AE5D17C91AFFD62B00E55203 /* Metronome_Master.xcdatamodeld in Sources */,
+				AEEB17781AFFFB96002BD069 /* Operators.swift in Sources */,
 				AEEB17651AFFEDA7002BD069 /* Measure.swift in Sources */,
 				AEEB17671AFFEDDA002BD069 /* Beat.swift in Sources */,
 				AE5D17C61AFFD62B00E55203 /* AppDelegate.swift in Sources */,
+				AEEB17751AFFFB96002BD069 /* Duration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEEB176C1AFFEE22002BD069 /* Measure.swift in Sources */,
 				AE5D17DF1AFFD62C00E55203 /* Metronome_MasterTests.swift in Sources */,
+				AEEB176E1AFFEE22002BD069 /* Phrase.swift in Sources */,
+				AEEB176D1AFFEE22002BD069 /* Beat.swift in Sources */,
+				AEEB176F1AFFEE22002BD069 /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
