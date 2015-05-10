@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE51BDB61AFFDD4100E817F4 /* Metronome Master.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Metronome Master.entitlements"; sourceTree = "<group>"; };
 		AE5D17C01AFFD62B00E55203 /* Metronome Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metronome Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5D17C41AFFD62B00E55203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5D17C51AFFD62B00E55203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		AE5D17C21AFFD62B00E55203 /* Metronome Master */ = {
 			isa = PBXGroup;
 			children = (
+				AE51BDB61AFFDD4100E817F4 /* Metronome Master.entitlements */,
 				AE5D17C51AFFD62B00E55203 /* AppDelegate.swift */,
 				AE5D17CA1AFFD62B00E55203 /* ViewController.swift */,
 				AE5D17CC1AFFD62B00E55203 /* Main.storyboard */,
@@ -166,6 +168,11 @@
 					AE5D17BF1AFFD62B00E55203 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 3W67YYZ9EF;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					AE5D17D71AFFD62C00E55203 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -364,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Metronome Master/Metronome Master.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Metronome Master/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -375,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Metronome Master/Metronome Master.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Metronome Master/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
