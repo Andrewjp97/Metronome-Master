@@ -7,6 +7,10 @@
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeIconFiles</key>
+			<array>
+				<string>Icon-60@3x.png</string>
+			</array>
 			<key>CFBundleTypeName</key>
 			<string>Metronome Master song file</string>
 			<key>LSHandlerRank</key>

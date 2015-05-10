@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE5A5B061AFFE5EE006D0F83 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5A5B051AFFE5EE006D0F83 /* Icon-60@3x.png */; };
 		AE5D17C61AFFD62B00E55203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D17C51AFFD62B00E55203 /* AppDelegate.swift */; };
 		AE5D17C91AFFD62B00E55203 /* Metronome_Master.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE5D17C71AFFD62B00E55203 /* Metronome_Master.xcdatamodeld */; };
 		AE5D17CB1AFFD62B00E55203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D17CA1AFFD62B00E55203 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		AE51BDB61AFFDD4100E817F4 /* Metronome Master.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Metronome Master.entitlements"; sourceTree = "<group>"; };
+		AE5A5B051AFFE5EE006D0F83 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		AE5D17C01AFFD62B00E55203 /* Metronome Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metronome Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5D17C41AFFD62B00E55203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5D17C51AFFD62B00E55203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		AE5D17B71AFFD62B00E55203 = {
 			isa = PBXGroup;
 			children = (
+				AE5A5B051AFFE5EE006D0F83 /* Icon-60@3x.png */,
 				AE5D17C21AFFD62B00E55203 /* Metronome Master */,
 				AE5D17DB1AFFD62C00E55203 /* Metronome MasterTests */,
 				AE5D17C11AFFD62B00E55203 /* Products */,
@@ -204,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5A5B061AFFE5EE006D0F83 /* Icon-60@3x.png in Resources */,
 				AE5D17CE1AFFD62B00E55203 /* Main.storyboard in Resources */,
 				AE5D17D31AFFD62B00E55203 /* LaunchScreen.xib in Resources */,
 				AE5D17D01AFFD62B00E55203 /* Images.xcassets in Resources */,
