@@ -435,6 +435,7 @@
 				AE5D17E41AFFD62C00E55203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE5D17E51AFFD62C00E55203 /* Build configuration list for PBXNativeTarget "Metronome MasterTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +444,7 @@
 				AE5D17E71AFFD62C00E55203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
