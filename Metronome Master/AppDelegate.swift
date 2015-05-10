@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreData
-import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Crashlytics API Initialization
-        Crashlytics.startWithAPIKey("1c6d125161cfd6155af441bc83d21a64632d815c")
         
         return true
     }
