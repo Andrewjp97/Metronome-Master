@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B27A95C5-4777-4AF8-A333-60684167DBF8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Metronome Master</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8EF81D0F16AFB93D5F94DBDA002F68EFC06CDB3E</key>
+		<string>https://github.com/Andrewjp97/Metronome-Master</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Metronome Master.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8EF81D0F16AFB93D5F94DBDA002F68EFC06CDB3E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Andrewjp97/Metronome-Master</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8EF81D0F16AFB93D5F94DBDA002F68EFC06CDB3E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8EF81D0F16AFB93D5F94DBDA002F68EFC06CDB3E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Metronome%20Master</string>
+		</dict>
+	</array>
+</dict>
+</plist>
