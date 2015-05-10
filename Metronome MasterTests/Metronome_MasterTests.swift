@@ -29,20 +29,51 @@ class Metronome_MasterTests: XCTestCase {
         beat.accented = true
         beat.generateSounds()
         
-        XCTAssertEqual(beat.sounds.count, 8, "Pass")
+        XCTAssertEqual(beat.sounds.count, 8, "Incorrect Subdivision Count")
     
     }
     
     func testBeatPerformance() {
+        
         self.measureBlock { () -> Void in
+            
             let beat = Beat()
             beat.subdivisions = 8
             beat.time = 2
             beat.accented = true
             beat.generateSounds()
+            
         }
+        
     }
     
+    func testMeasureCreation() {
+        
+        let measure = Measure()
+        measure.time = 4
+        measure.subdivisions = 2
+        measure.accented = true
+        measure.generateBeats()
+        
+        XCTAssertEqual(measure.beats.count, 4, "Incorrect Beat Count")
+        
+        XCTAssertEqual(measure.beats[0].sounds.count, 2, "Incorrect Subdivision Count In Measure")
+        
+    }
+    
+    func testMeasurePerformance() {
+        
+        self.measureBlock { () -> Void in
+            
+            let measure = Measure()
+            measure.time = 4
+            measure.subdivisions = 2
+            measure.accented = true
+            measure.generateBeats()
+            
+        }
+        
+    }
     
 //    func testExample() {
 //        // This is an example of a functional test case.

@@ -50,9 +50,9 @@ class Beat: NSObject {
         
     }
     
-    func playNextSound() {
+    func playSound() {
         
-        if currentDivision < sounds.count {
+        if currentDivision < subdivisions {
             
             if let sound = sounds[subdivisions] as? AVAudioPlayer {
                 
@@ -60,17 +60,11 @@ class Beat: NSObject {
                 
                 currentDivision++
                 
-                NSTimer.scheduledTimerWithTimeInterval(time / subdivisions.double, target: self, selector: Selector("playNextSound"), userInfo: nil, repeats: false)
+                NSTimer.scheduledTimerWithTimeInterval(time / subdivisions.double, target: self, selector: Selector("playSound"), userInfo: nil, repeats: false)
                 
             }
             
         }
-        
-    }
-    
-    func playSounds() {
-        
-        NSTimer.scheduledTimerWithTimeInterval(time / subdivisions.double, target: self, selector: Selector("playNextSound"), userInfo: nil, repeats: false)
         
     }
     
