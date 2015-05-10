@@ -15,6 +15,10 @@
 		AE5D17D01AFFD62B00E55203 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5D17CF1AFFD62B00E55203 /* Images.xcassets */; };
 		AE5D17D31AFFD62B00E55203 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5D17D11AFFD62B00E55203 /* LaunchScreen.xib */; };
 		AE5D17DF1AFFD62C00E55203 /* Metronome_MasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D17DE1AFFD62C00E55203 /* Metronome_MasterTests.swift */; };
+		AEEB17651AFFEDA7002BD069 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17641AFFEDA7002BD069 /* Measure.swift */; };
+		AEEB17671AFFEDDA002BD069 /* Beat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17661AFFEDDA002BD069 /* Beat.swift */; };
+		AEEB17691AFFEDE9002BD069 /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB17681AFFEDE9002BD069 /* Phrase.swift */; };
+		AEEB176B1AFFEDF2002BD069 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB176A1AFFEDF2002BD069 /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,10 @@
 		AE5D17D81AFFD62C00E55203 /* Metronome MasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metronome MasterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5D17DD1AFFD62C00E55203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5D17DE1AFFD62C00E55203 /* Metronome_MasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome_MasterTests.swift; sourceTree = "<group>"; };
+		AEEB17641AFFEDA7002BD069 /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		AEEB17661AFFEDDA002BD069 /* Beat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beat.swift; sourceTree = "<group>"; };
+		AEEB17681AFFEDE9002BD069 /* Phrase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phrase.swift; sourceTree = "<group>"; };
+		AEEB176A1AFFEDF2002BD069 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,10 @@
 				AE51BDB61AFFDD4100E817F4 /* Metronome Master.entitlements */,
 				AE5D17C51AFFD62B00E55203 /* AppDelegate.swift */,
 				AE5D17CA1AFFD62B00E55203 /* MainViewController.swift */,
+				AEEB17641AFFEDA7002BD069 /* Measure.swift */,
+				AEEB17661AFFEDDA002BD069 /* Beat.swift */,
+				AEEB17681AFFEDE9002BD069 /* Phrase.swift */,
+				AEEB176A1AFFEDF2002BD069 /* Song.swift */,
 				AE5A5B071AFFE650006D0F83 /* Interface */,
 				AE5D17CF1AFFD62B00E55203 /* Images.xcassets */,
 				AE5D17C71AFFD62B00E55203 /* Metronome_Master.xcdatamodeld */,
@@ -252,8 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEEB176B1AFFEDF2002BD069 /* Song.swift in Sources */,
+				AEEB17691AFFEDE9002BD069 /* Phrase.swift in Sources */,
 				AE5D17CB1AFFD62B00E55203 /* MainViewController.swift in Sources */,
 				AE5D17C91AFFD62B00E55203 /* Metronome_Master.xcdatamodeld in Sources */,
+				AEEB17651AFFEDA7002BD069 /* Measure.swift in Sources */,
+				AEEB17671AFFEDDA002BD069 /* Beat.swift in Sources */,
 				AE5D17C61AFFD62B00E55203 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
